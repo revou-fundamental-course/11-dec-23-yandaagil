@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="assets/logo.webp" type="image/x-icon" />
+    <title>SMA N 4 Surakarta</title>
+  </head>
+  <body>
+    <header>
+      <div class="container header">
+        <div class="logo">
+          <img src="assets/logo.webp" alt="logo" />
+        </div>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#facilitation">Facilitation</a></li>
+            <li><a href="#message">Message</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <a class="navbar-menu" onclick="toggleMenu()">Menu</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <h2 id="welcome-text"></h2>
+      </section>
+
+      <section class="container facilitation" id="facilitation">
+        <h1>Our Facilitation</h1>
+        <div class="heading-underline"></div>
+        <ul class="facilitation-list">
+          <li>
+            <div class="circle">
+              <img src="assets/teacher.jpg" alt="Professional teacher" />
+            </div>
+            <span class="facilitation-text">Professional Teacher</span>
+          </li>
+          <li>
+            <div class="circle">
+              <img src="assets/sport-field.jpg" alt="Sport field" />
+            </div>
+            <span class="facilitation-text">Sport Field</span>
+          </li>
+          <li>
+            <div class="circle">
+              <img src="assets/library.jpg" alt="Library" />
+            </div>
+            <span class="facilitation-text">Library</span>
+          </li>
+          <li>
+            <div class="circle">
+              <img src="assets/computer-lab.jpg" alt="Compputer lab" />
+            </div>
+            <span class="facilitation-text">Computer Lab</span>
+          </li>
+          <li>
+            <div class="circle">
+              <img src="assets/science-lab.jpg" alt="Science lab" />
+            </div>
+            <span class="facilitation-text">Science Lab</span>
+          </li>
+          <li>
+            <div class="circle">
+              <img src="assets/canteen.jpg" alt="Canteen" />
+            </div>
+            <span class="facilitation-text">Canteen</span>
+          </li>
+          <li>
+            <div class="circle">
+              <img src="assets/mosque.jpg" alt="Mosque" />
+            </div>
+            <span class="facilitation-text">Mosque</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="container message" id="message">
+        <h1>Message Us</h1>
+        <div class="heading-underline"></div>
+        <div class="message-div">
+          <form
+            name="message-form"
+            class="message-form"
+            onsubmit="return validateForm()"
+          >
+            <input
+              type="text"
+              name="fullname"
+              id="fullname"
+              placeholder="Name"
+              autocomplete="name"
+              required
+            />
+            <input
+              type="date"
+              name="birthdate"
+              id="birthdate"
+              placeholder="Birthdate"
+              required
+            />
+            <div class="input-radio">
+              <input type="radio" name="gender" id="male" value="Male" />
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="female" value="Female" />
+              <label for="female">Female</label>
+            </div>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+              required
+            ></textarea>
+            <div class="submit-group">
+              <input type="submit" id="submit" value="Send" />
+              <input type="reset" id="reset" value="Reset" />
+            </div>
+          </form>
+          <div class="display-form">
+            <strong>Current time: <span id="sender-date"></span></strong><br />
+            <strong>Name: <span id="sender-name"></span></strong>
+            <strong>Birthdate: <span id="sender-birthdate"></span></strong>
+            <strong>Gender: <span id="sender-gender"></span></strong>
+            <strong>Message: <span id="sender-message"></span></strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-bg" id="contact">
+        <div class="container contact">
+          <div class="contact-about">
+            <h3>About Us</h3>
+            <p>
+              It is a high school with the vision of "Character-driven,
+              excellence in achievements, caring for the environment." Join us
+              and achieve a brilliant future.
+            </p>
+          </div>
+          <div class="contact-info">
+            <h3>Contact</h3>
+            <ul>
+              <li>
+                <p>
+                  Jl. Adi Sucipto No.1, Manahan, Kec. Banjarsari, Kota
+                  Surakarta, Jawa Tengah 57139
+                </p>
+              </li>
+              <li>
+                <p>Email: mail@smaracatur.sch.id</p>
+              </li>
+              <li>
+                <p>Phone: (0271) 711943</p>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-social">
+            <h3>Social</h3>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer">
+        <p>Created by @yandaagil</p>
+        <p>
+          &copy; Copyright <span id="current-year"></span> - SMA N 4 Surakarta
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
