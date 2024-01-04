@@ -55,6 +55,19 @@ function setSenderUI(fullname, birthdate, gender, message) {
   document.getElementById("sender-birthdate").textContent = formattedBirthdate;
   document.getElementById("sender-gender").textContent = gender;
   document.getElementById("sender-message").textContent = message;
+
+  document.getElementById("clear-message").style.display = "block";
+}
+
+// CLEAR MESSAGE DISPLAY
+function clearMessage() {
+  document.getElementById("sender-date").textContent = "";
+  document.getElementById("sender-name").textContent = "";
+  document.getElementById("sender-birthdate").textContent = "";
+  document.getElementById("sender-gender").textContent = "";
+  document.getElementById("sender-message").textContent = "";
+
+  document.getElementById("clear-message").style.display = "none";
 }
 
 // GET CURRENT YEAR FOR FOOTER

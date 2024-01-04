@@ -290,6 +290,24 @@ input[type="reset"]:hover {
   font-weight: normal;
 }
 
+.clear-message {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: var(--secondary);
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-family: var(--font-quicksand);
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.clear-message:hover {
+  opacity: 80%;
+}
+
 /* CONTACT SECTION */
 .contact-bg {
   padding: 15px 0;
@@ -453,8 +471,12 @@ footer {
     gap: 50px;
   }
 
+  .message-form {
+    width: auto;
+  }
+
   .display-form {
-    height: 200px;
+    height: auto;
   }
 
   .contact {
