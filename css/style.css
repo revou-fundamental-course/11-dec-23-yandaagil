@@ -31,7 +31,7 @@ body {
 
 .container {
   max-width: 1200px;
-  margin: 0 80px;
+  margin: 0 auto;
   padding: 0 15px;
   width: 100%;
 }
@@ -54,6 +54,7 @@ header {
   background-color: var(--primary);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .header {
@@ -378,6 +379,8 @@ input[type="reset"]:hover {
 footer {
   height: min-content;
   background-color: var(--tertiary);
+  display: flex;
+  justify-content: center;
 }
 
 .footer {
